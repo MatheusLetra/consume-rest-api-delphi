@@ -13,7 +13,7 @@ const
 
 type
   TForm1 = class(TForm)
-    Usu·rio: TLabel;
+    Usu√°rio: TLabel;
     Edit1: TEdit;
     RESTClient1: TRESTClient;
     RESTRequest1: TRESTRequest;
@@ -66,7 +66,7 @@ begin
     IDEdit.Text   := UserObject.Values['user_id'].Value;
     NameEdit.Text := UserObject.Values['full_name'].Value;
     MailEdit.Text := UserObject.Values['email'].Value;
-    RadioGroup1.ItemIndex := StrToInt(UserObject.Values['password'].Value);
+    RadioGroup1.ItemIndex := StrToInt(UserObject.Values['level'].Value);
     ImageURL := UserObject.Values['profile_image'].Value;
   end
   else
